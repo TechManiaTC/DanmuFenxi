@@ -21,7 +21,7 @@ fout.close()
 fr = open('text.txt','rb')
 text = pickle.load(fr)
 
-backgroud_Image = plt.imread('girl.jpg')
+backgroud_Image = plt.imread('girl.jpg') #需要自己准备一张图片
 wc = WordCloud( background_color = 'white',    # 设置背景颜色
                 mask = backgroud_Image,        # 设置背景图片
                 max_words = 2000,            # 设置最大现实的字数
